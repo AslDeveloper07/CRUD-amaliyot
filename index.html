@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Amaliyot </title>
+    <link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1>Talaba ma'lumot tizimlari</h1>
+    <div class="form-container">
+        <input type="text" id="name" placeholder="Isim">
+        <input type="number" id="age" placeholder="Yosh">
+        <input type="text" id="course" placeholder="Kusr">
+        <button id="addBtn">Talaba Qo'shish</button>
+    </div>
+    <div class="student-list" id="studentList"></div>
+
+    <div class="edit_modal hidden">
+		<input type="text" id="name_edit" placeholder="Ism">
+		<input type="number" id="age_edit" placeholder="Yosh">
+		<input type="text" id="course_edit" placeholder="Kurs">
+		<button id="editBtn" >Edit <i class="ri-edit-2-fill"></i></button>
+	</div>
+	<div class="overlay hidden"></div>
+
+	<script src="script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
